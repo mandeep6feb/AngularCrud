@@ -1,0 +1,30 @@
+
+
+<div class="container p-3">
+ <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control form-control-sm" name="f_name" [(ngModel)]="form.f_name" placeholder="Enter Fisrt Name">
+    </div>
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control form-control-sm" name="l_name" [(ngModel)]="form.l_name" placeholder="Enter Last Name ">
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control form-control-sm" name="address" [(ngModel)]="form.address"  placeholder="Enter Address">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input type="email" class="form-control form-control-sm" name="email" [(ngModel)]="form.email" placeholder="Enter Email">
+    </div>
+
+    <div class="form-group col-md-6">
+      <input type="number" class="form-control form-control-sm" name="mobile" [(ngModel)]="form.mobile" placeholder="Enter Mobile No.">
+    </div>
+  </div>
+  <button type="submit" (click)="save()" class="btn btn-primary btm-sm">Save</button>
+  <button type="submit" (click)="update()" class="btn btn-info btm-sm">Update</button>
+</form>
+
+</div>
