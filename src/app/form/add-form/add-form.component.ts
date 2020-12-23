@@ -1,6 +1,5 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Http } from '@angular/http';
-import { environment } from './../../../environments/environment';
 import { Component, OnInit } from '@angular/core';
 
 export class Form {
@@ -25,7 +24,7 @@ export class AddFormComponent implements OnInit {
   FormData: any;
   Edit: any;
   _id: any;
-  env = environment.apiBase;
+  env = 'http://localhost:3000/api/';
   constructor(private http: Http, public route: ActivatedRoute, private router: Router) {
     this.form = new Form();
     this.route.params.subscribe(param => {
